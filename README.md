@@ -100,7 +100,13 @@ Exemplo photoshop x Filtro do Instagram
 #### `8. Conceito de Model (Schema)`
 Model ou Schema são moldes que descrevem quais campos serão aceitos no seu banco de dados, podemos também definir informações de tipo de dados e fazer "os relacionamentos".
 
-#### `9. Extra: `
+#### `9. Passos para conectar o MongoDb usando mongoose:`
+
+1 - Crio meu schema no model
+2 - Crio minha configuracao de conexao no database, passando informacoes padrão e a minha string de conexão
+3 - Ligar a conexão no meu server, importando meu arquivo database
+
+#### `10. Extra: `
 
 `Dotenv`
 
@@ -221,7 +227,7 @@ Acesse o board para conferir as informações de forma visual: https://miro.com/
 
 - [ ]  Não deverá ser possível criar estudio com o mesmo nome
 - [ ]  Não deverá ser possível criar título com o mesmo nome
-- [ ]  Para criar um novo título, deverá vincular no momento da criação a um estudio já existente no sistema
+- [ ]  Para criar um novo título, deverá vincular no momento da criação a um estudio já existente no sistema, utilizando o numero do id do estudio correspondente no corpo da requisição
 
 <br>
 <br>
