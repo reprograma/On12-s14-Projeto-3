@@ -1,7 +1,7 @@
-# On12-TodasEmTech-s14-ProjetoGuiado-BBD
+# On12-s14-ProjetoGuiado-BBD
 
-Turma Online 12 - Todas em Tech | Back-end | 2021 | Semana 14: Projeto Guiado - CRUD com BD
-
+Turma Online 12 | Back-end | 2021 | Semana 14: Projeto Guiado - CRUD com BD
+Dontpad da aula: http://dontpad.com/projeto-db
 ## Tô de volta, turminha amada! <3
 
 - Chamada, apresentação das monitoras e acordos:
@@ -208,7 +208,7 @@ Acesse o board para conferir as informações de forma visual: https://miro.com/
 ### Requisitos 
 - [ ]  **"/titulos/marvel"** Deverá retornar todos os títulos com o estudio Marvel
 - [ ]  **"/titulos/ghibli"** Deverá retornar todos os títulos com o estudio Ghibli
-- [ ]  **"/titulos/pixar"** Deverá retornar todos os títulos com o estudio Pixar
+- [x]  **"/titulos/pixar"** Deverá retornar todos os títulos com o estudio Pixar
 
 - [x]  **"/estudios"** Deverá retornar todos os estudios cadastrados
 - [x]  "**/titulos**" Deverá retornar todos os títulos cadastrados, cada um fazendo referencia ao seu respectivo estudio
@@ -219,7 +219,7 @@ Acesse o board para conferir as informações de forma visual: https://miro.com/
 - [ ]  "/titulos/[ID]" Deverá deletar titulo por id específico e retorna mensagem amigável
 - [ ]  "/estudios/[ID]" Deverá deletar estudio por id específico e retorna mensagem amigável
 
-- [ ]  "/titulos/[ID]" Deverá alterar informação específica dentro de um titulo por id específico e retorna o título alterado
+- [x]  "/titulos/[ID]" Deverá alterar informação específica dentro de um titulo por id específico e retorna o título alterado
 - [ ]  "/estudios/[ID]" Deverá alterar informação específica dentro de um estudio por id específico e retorna o título alterado
 
 
@@ -302,7 +302,7 @@ Acesse o board para conferir as informações de forma visual: https://miro.com/
 Crie seu repositório contendo:
  - um readme com os maiores aprendizados nesse projeto e copiando todas as informações sobre o projeto
  - cumprimento total do contrato (requisitos e regras de negócios) 
- - realizar testes no Postman e verificar se os dados estão persistindo com o mongoDB
+ - realizar testes no Postman e verificar se os dados estão persistindo com o mongoDB (ROBO 3T)
 
 Subir o repositório no classroom.
 

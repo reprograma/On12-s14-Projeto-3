@@ -11,6 +11,7 @@ router.post('/', controller.createStudio)
 //listar um estudio/get/findById
 
 //atualizar uma informacao especifica num estudio/patch/findById/save
+router.patch('/:id', controller.updateOne)
 
 //deletar um estudio/delete/findById/remove
 

@@ -2,6 +2,9 @@ const express = require('express')
 const router = express.Router()
 const controller = require('../controllers/tituloController')
 
+//listar todos os titulos da Pixar
+router.get('/pixar', controller.getAllPixar)
+
 //listar todos os titulos/get/find
 router.get('/', controller.getAll)
 

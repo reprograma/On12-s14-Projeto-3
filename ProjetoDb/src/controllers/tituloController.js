@@ -1,6 +1,12 @@
 const mongoose = require('mongoose')
 const Titulo = require('../models/titulo')
 
+const getAllPixar = async (req, res) => {
+  const titulos = await Titulo.find().populate('estudio')
+  const titulosFiltrados = titulos.filter(titulo => titulo.estudio.nome == "Pixar")
+  res.json(titulosFiltrados)
+}
+
 const getAll = async (req, res) => {
   const titulos = await Titulo.find().populate('estudio')
   res.status(200).json(titulos)
@@ -26,5 +32,6 @@ const createTitle = async (req, res) => {
 
 module.exports = {
   getAll,
-  createTitle
+  createTitle,
+  getAllPixar
 }
