@@ -1,24 +1,17 @@
-const express = require("express")
+const express = require('express')
 const app = express()
 
-
+//TODO:
+//conectar o db
 const db = require('./src/data/database')
 db.connect()
-
+//usar as rotas
 app.use(express.json())
 
-const estudioRouter = require('./src/routes/estudio.routes')
-app.use('/estudio', estudioRouter)
+const estudiosRouter = require('./src/routes/estudios.routes')
+app.use('/estudios', estudiosRouter)
 
-const tituloRouter = require('./src/routes/titulo.routes')
-app.use('/titulo', tituloRouter)
+const titulosRouter = require('./src/routes/titulos.routes')
+app.use('/titulos', titulosRouter)
 
-/* const estudioController = require('./src/controllers/estudioControllers')
-app.use('/estudio', estudioController)
-
-const tituloController = require('./src/controllers/tituloControllers')
-app.use('titulo', tituloController)
- */
-
-app.listen(8080, () => console.log('servidor rodando perfeitamente na porta 8080'))
-
+app.listen(3333, () => console.log('listening on port 3333'))
